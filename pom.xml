@@ -14,6 +14,8 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>locationweb</name>
 	<description>Location Module</description>
+	
+	<packaging>war</packaging>    <!--Our Project will be bundled as War instead of jar,when that happens, we need to provide an additional configuration,So we are going update locationweb class by extending with SpringBootServletIntializer  Class -->
 
 	<properties>
 		<java.version>1.8</java.version>
