@@ -38,12 +38,12 @@
           <scope>provided</scope>
       </dependency>
 		
-		<dependency>
+	<!-- 	<dependency>
 			<groupId>org.apache.tomcat.embed</groupId>
-			<artifactId>tomcat-embed-jasper</artifactId>     <!--no need of this dependency when we run as war file in server -->
+			<artifactId>tomcat-embed-jasper</artifactId>     no need of this dependency when we run as war file in server
 			<scope>provided</scope>
-	<!--This is a libraray that is required for the jsps to work.If we don't add,depending on the version of the spring boot we will see the issues where our jsps will not be served -->
-		</dependency>
+	This is a libraray that is required for the jsps to work.If we don't add,depending on the version of the spring boot we will see the issues where our jsps will not be served
+		</dependency> -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-mail</artifactId>
@@ -74,8 +74,8 @@
 		</dependency>
 	</dependencies>
 
-<!--By default this plugin will create jar file,inorder to create War,we have to commmit it,also add war in packagiing element above-->
-	<!-- <build>
+<!--By default this plugin will create jar file,inorder to create War,commit it and then add war in packaging element above-->
+<!-- 	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
