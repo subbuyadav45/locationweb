@@ -30,6 +30,14 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+
+<!--spring-boot-starter-tomcat dependency added to run as war file @TechTalk Debu channel  -->		
+      <dependency>
+          <groupId>org.springframework.boot</groupId>
+          <artifactId>spring-boot-starter-tomcat</artifactId>
+          <scope>provided</scope>
+      </dependency>
+		
 		<dependency>
 			<groupId>org.apache.tomcat.embed</groupId>
 			<artifactId>tomcat-embed-jasper</artifactId>     <!--no need of this dependency when we run as war file in server -->
@@ -66,13 +74,14 @@
 		</dependency>
 	</dependencies>
 
-	<build>
+<!--By default this plugin will create jar file,inorder to create War,we have to commmit it,also add war in packagiing element above-->
+	<!-- <build>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
-	</build>
+	</build> -->
 
 </project>
