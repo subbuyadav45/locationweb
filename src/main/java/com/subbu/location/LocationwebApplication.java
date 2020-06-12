@@ -7,6 +7,7 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 
 @SpringBootApplication
 public class LocationwebApplication extends SpringBootServletInitializer {
+    //Adding Logic related to feature-300.
 
 	public static void main(String[] args) {
 		SpringApplication.run(LocationwebApplication.class, args);
